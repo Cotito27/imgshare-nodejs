@@ -1,15 +1,4 @@
 $(function() {
-  document.getElementById("inputGroupFile").onchange = function(e) {
-    let reader = new FileReader();
-
-    // Leemos el archivo subido y se lo pasamos a nuestro fileReader
-    reader.readAsDataURL(e.target.files[0]);
-  
-    // Le decimos que cuando este listo ejecute el código interno
-    reader.onload = function(){
-   
-    };
-  };
   // Post Toggle View
   $('#post-comment').hide();
   $('#btn-toggle-comment').click(e => {
